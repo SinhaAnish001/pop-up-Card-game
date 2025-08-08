@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    background-color: grey;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: grey;
+}
+
+.card{
+    /* from here to change the position of box */
+        position: absolute;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    /* to here */
+    height: 300px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#card1{
+    /* z-index: denotes card screen ke kitne par rahega; */
+    z-index: 4;
+    background-color: violet;
+}
+
+#card2{
+    rotate: -10deg;
+    z-index: 3;
+    background-color: blue;
+}
+
+#card3{
+    rotate: -20deg;
+    z-index: 2;
+    background-color: yellow;
+}
+
+#card4{
+    rotate: -30deg;
+    z-index: 1;
+    background-color: red;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#card1:hover{
+    z-index: 5;
+}
+
+#card2:hover{
+    z-index: 5;
+}
+
+#card3:hover{
+    z-index: 5;
+}
+
+#card4:hover{
+    z-index: 5;
+}
